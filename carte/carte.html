@@ -1,0 +1,108 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="fr">
+  <!-- Le head -> meta +link + title -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="carte.css" />
+    <title>Le Fournil — Boulangerie artisanale</title>
+  </head>
+  <!-- Body -> Entête + Corps + Pied de page  -->
+
+  <body>
+    <!-- Header -> Entête du site : H1 + nav -->
+    <header>
+      <h1>Le Fournil</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../carte/carte.html">La carte</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main -> Corps de page  -->
+    <main class="carte">
+      <div>
+        <h2>Nos pains</h2>
+        <a href="#Tarifs">Voir les tarifs</a>
+      </div>
+      <section class="containerProduits">
+        <article class="produits">
+          <h3>La baguette traditionnelle</h3>
+          <img
+            src="https://images.pexels.com/photos/30926133/pexels-photo-30926133.jpeg"
+            alt="Baguette de pain coupée pour montrer la qualité de la mie"
+            height="250px"
+          />
+        </article>
+        <article class="produits">
+          <h3>La miche</h3>
+          <img
+            src="https://images.pexels.com/photos/37421224/pexels-photo-37421224.jpeg"
+            alt="Présentoire de miches de pains"
+            height="250px"
+          />
+        </article>
+        <article class="produits">
+          <h3>Le pain viennois</h3>
+          <img
+            src="https://images.pexels.com/photos/9779954/pexels-photo-9779954.jpeg"
+            alt="Plateau de pain viennois"
+            height="250px"
+          />
+        </article>
+      </section>
+      <section>
+        <h2>Plus de renseignement</h2>
+        <table id="Tarifs">
+          <caption>
+            Liste des tarifs 2026
+          </caption>
+          <thead>
+            <th scope="col">Produits</th>
+            <th scope="col">Prix en €</th>
+            <th scope="col">Promotion</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Baguette</td>
+              <td>1 €</td>
+              <td>3 achetés + 1 offert</td>
+            </tr>
+            <tr>
+              <td>Croissants</td>
+              <td>0,90 €</td>
+              <td>3 achetés + 1 offert</td>
+            </tr>
+            <tr>
+              <td>Pain au chocolat</td>
+              <td>1,15 €</td>
+              <td>3 achetés + 1 offert</td>
+            </tr>
+            <tr>
+              <td>Chocolatine</td>
+              <td>1 000 000 000 000 €</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- Footer -> horaire + adresse+ infos légales  -->
+
+    <footer>
+      <p>Retrouvez nous du mardi au dimanche de 6h30 à 19h</p>
+      <p>
+        Addresse : <br />
+        404 rue du code <br />
+        8080 JavaScript
+      </p>
+    </footer>
+  </body>
+</html>

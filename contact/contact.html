@@ -1,0 +1,105 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="fr">
+  <!-- Le head -> meta +link + title -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <title>Le Fournil — Boulangerie artisanale</title>
+  </head>
+  <!-- Body -> Entête + Corps + Pied de page  -->
+
+  <body>
+    <!-- Header -> Entête du site : H1 + nav -->
+    <header>
+      <h1>Le Fournil</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../carte/carte.html">La carte</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main -> Corps de page  -->
+    <main>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Votre identité</legend>
+          <label for="name">Votre nom</label>
+          <input type="text" name="name" id="name" required />
+
+          <label for="email">Votre mail</label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="phone">Votre numéro de téléphone</label>
+          <input type="tel" name="phone" id="phone" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Votre commande</legend>
+          <label for="dateTake">Date de retrait</label>
+          <input type="date" name="dateTake" id="dateTake" />
+          <label for="products">Quel produit?</label>
+          <select name="products" id="products">
+            <option value="">---- Choississez le produit ----</option>
+            <option value="baguette">baguette</option>
+            <option value="Croissant">Croissant</option>
+            <option value="HalloweenCake">HalloweenCake</option>
+            <option value="RoseSable">Roses des Sables</option>
+          </select>
+          <label for="quantite">Quantité</label>
+          <input type="number" name="quantite" id="quantite" min="1" max="20" />
+
+          <p>Veuillez choisir le mode de retrait</p>
+          <div>
+            <input
+              type="radio"
+              id="livraison"
+              name="retrait"
+              value="livraison"
+              checked
+            />
+            <label for="retrait">Retrait</label>
+
+            <input type="radio" id="magasin" name="retrait" value="magasin" />
+            <label for="livraison">Livraison</label>
+          </div>
+
+          <label for="message"
+            >Veuillez nous communiquer toutes demandes particulières</label
+          >
+          <textarea
+            name="message"
+            id="message"
+            maxlength="300"
+            rows="10"
+          ></textarea>
+          <div>
+            <label for="cgv"
+              >Veuillez acceptez les
+              <a href="#">Conditions générales de Vente</a></label
+            >
+            <input type="checkbox" name="cgv" id="cgv" />
+          </div>
+        </fieldset>
+        <button type="submit">VALIDER</button>
+      </form>
+    </main>
+
+    <!-- Footer -> horaire + adresse+ infos légales  -->
+
+    <footer>
+      <p>Retrouvez nous du mardi au dimanche de 6h30 à 19h</p>
+      <p>
+        Addresse : <br />
+        404 rue du code <br />
+        8080 JavaScript
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+/** @format */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --creme: rgb(249, 238, 218);
+  --brun: rgb(190, 110, 5);
+  --dore: rgb(255, 255, 0);
+  --text: rgb(20, 20, 20);
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6;
+  background-color: var(--creme);
+  color: var(--text);
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h2 {
+  border-bottom: 2px solid var(--dore);
+  color: var(--brun);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  color: white;
+}
+
+header {
+  background-color: var(--brun);
+  color: var(--creme);
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--brun);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.accueil {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 2rem;
+}
