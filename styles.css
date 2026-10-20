@@ -48,11 +48,16 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 footer {
   text-align: center;
   background-color: var(--brun);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 ul {
@@ -67,4 +72,31 @@ ul {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   padding: 2rem;
+}
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  position: relative;
+}
+
+.galerie img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.galerie legend {
+  position: absolute;
+  background: red;
+  border-radius: 0 0 15% 15%;
+  color: white;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .first_img {
+    grid-column: span 2;
+  }
 }
